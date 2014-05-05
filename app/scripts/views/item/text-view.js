@@ -15,6 +15,23 @@ function( Backbone, TextViewTmpl  ) {
 		
     	template: TextViewTmpl,
         
+        templateHelpers: {
+            
+            getSentRecv: function () {
+                if(this.date_sent == 0) {
+                    return "Sent";
+                } 
+                else {
+                    return "Recieved";
+                }
+            },
+            getDate: function () {
+                var date = new Date(this.date);
+                return date.toString();
+            }
+                
+        },
+        
 
     	/* ui selector cache */
     	ui: {},

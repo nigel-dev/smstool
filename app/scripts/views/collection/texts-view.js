@@ -50,7 +50,7 @@ function( Backbone, Comm, TextView, TextsCol  ) {
                         }
                     })
                         .done(function (data, status) {
-                            console.log(data);
+                           // console.log(data);
                             that.collection.reset(data);
 //                            morePages = (page * cardLimit) < data.total;
 //                            Comm.mediator.trigger("sortForm:show", data.total); //Pass total num results
